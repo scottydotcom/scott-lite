@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AboutSection from "./AboutSection"; 
-import ExperienceSection from "./ExperienceSection";
-import SkillSection from "./SkillSection";
+// import ExperienceSection from "./ExperienceSection";
+// import SkillSection from "./SkillSection";
 
 const Card = () => {
   const [activeSection, setActiveSection] = useState("#about");
@@ -30,8 +30,8 @@ const Card = () => {
       </header>
       <main className="card-main">
         <AboutSection isActive={activeSection === "#about"} />
-        <ExperienceSection isActive={activeSection === "#experience"} />
-        <SkillSection isActive={activeSection === "#skill"} />
+        {/* <ExperienceSection isActive={activeSection === "#experience"} />
+        <SkillSection isActive={activeSection === "#skill"} /> */}
         <div className="card-buttons">
           <button
             data-section="#about"
@@ -40,7 +40,7 @@ const Card = () => {
           >
             ABOUT
           </button>
-          <button
+          {/* <button
             data-section="#experience"
             className={activeSection === "#experience" ? "is-active" : ""}
             onClick={() => handleButtonClick("#experience")}
@@ -53,7 +53,7 @@ const Card = () => {
             onClick={() => handleButtonClick("#skilll")}
           >
             SKILLS
-          </button>
+          </button> */}
         </div>
       </main>
     </article>
