@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AboutSection from "./AboutSection"; 
-// import ExperienceSection from "./ExperienceSection";
+import ExperienceSection from "./ExperienceSection";
 // import SkillSection from "./SkillSection";
 
 const Card = () => {
@@ -26,12 +26,12 @@ const Card = () => {
           alt="avatar"
         />
         <h1 className="card-name">Scott</h1>
-        <h2 className="position-name">Web Dev | Full Stack | Data Analyst & Engineer</h2>
+        <h2 className="position-name">Web Dev | FullStack | Data Analyst & Engineer</h2>
       </header>
       <main className="card-main">
         <AboutSection isActive={activeSection === "#about"} />
-        {/* <ExperienceSection isActive={activeSection === "#experience"} />
-        <SkillSection isActive={activeSection === "#skill"} /> */}
+        { <ExperienceSection isActive={activeSection === "#experience"} />
+       /* <SkillSection isActive={activeSection === "#skill"} /> */}
         <div className="card-buttons">
           <button
             data-section="#about"
@@ -40,14 +40,14 @@ const Card = () => {
           >
             ABOUT
           </button>
-          {/* <button
+          { <button
             data-section="#experience"
             className={activeSection === "#experience" ? "is-active" : ""}
             onClick={() => handleButtonClick("#experience")}
           >
             EXPERIENCE
           </button>
-          <button
+         /* <button
             data-section="#skill"
             className={activeSection === "#skill" ? "is-active" : ""}
             onClick={() => handleButtonClick("#skilll")}
