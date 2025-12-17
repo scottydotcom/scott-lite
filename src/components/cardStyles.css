@@ -17,3 +17,15 @@
   top: 50%;
   left: 50%;
 }
+
+.card[data-state="#about"] {
+  height: 450px;
+}
+.card[data-state="#about"] .card-main {
+  padding-top: 0;
+}
+
+.card[data-state="#skill"] {
+  height: 430px;
+  width: 430px;
+}
