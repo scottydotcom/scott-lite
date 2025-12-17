@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import AboutSection from "./AboutSection";
-import ExperienceSection from "./ExperienceSection";
-import SkillSection from "./SkillSection";
+import AboutSection from "./About/AboutSection";
+import ExperienceSection from "./Experience/ExperienceSection";
+import SkillSection from "./Skill/SkillSection";
+import "./cardStyles.css";
 
 const Card = () => {
   const [activeSection, setActiveSection] = useState("#about");

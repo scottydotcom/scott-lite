@@ -1,4 +1,5 @@
 import React from "react";
+import "./experienceStyles.css";
 
 const ExperienceSection = ({ isActive }) => {
   const experiences = [

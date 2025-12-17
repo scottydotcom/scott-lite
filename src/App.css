@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+  color: #2b2c48;
+  font-family: "Outfit", sans-serif;
+  background-image: url(https://applescoop.org/image/wallpapers/iphone/51874230394740694-56733906234897101.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

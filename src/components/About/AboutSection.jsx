@@ -1,4 +1,5 @@
 import React from "react";
+import "./aboutStyles.css";
 
 const AboutSection = ({ isActive }) => {
   return (
