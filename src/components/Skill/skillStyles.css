@@ -1,0 +1,44 @@
+/* Styles for the skills timeline (mirrors .experience-timeline) */
+.skills-timeline {
+  margin-top: 30px;
+  position: relative;
+}
+.skills-timeline::after {
+  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, rgba(81, 106, 204, 1) 100%);
+  content: "";
+  left: 42px;
+  width: 2px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+}
+
+/* Styles for each skill item (mirrors .experience-date) */
+.skill-item {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+.skill-item:last-child {
+  padding-bottom: 5px;
+}
+.skill-item::after {
+  content: "";  /* <-- Add this to make the dot visible */
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 37px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, rgb(160, 171, 227) 0%, rgb(81, 106, 204) 100%);
+}
+
+
+/* Styles for the skill title (mirrors .experience-title) */
+.skill-title {
+  font-weight: 500;
+  font-size: 14px;
+}
